@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "specialmodelrenderertest",
+	"version": "${version}",
+	"name": "SpecialModelRendererTest",
+	"description": "This is a mod to test SpecialModelRenderer",
+	"authors": [
+		"Iunius118"
+	],
+	"contact": {
+		"sources": "https://github.com/Iunius118/SpecialModelRendererTest"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/specialmodelrenderertest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.specialmodelrenderertes.SpecialModelRendererTest"
+		],
+		"client": [
+			"com.example.specialmodelrenderertes.SpecialModelRendererTestClient"
+		],
+		"fabric-datagen": [
+			"com.example.specialmodelrenderertes.SpecialModelRendererTestDataGenerator"
+		]
+	},
+	"mixins": [
+		"specialmodelrenderertest.mixins.json",
+		{
+			"config": "specialmodelrenderertest.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
