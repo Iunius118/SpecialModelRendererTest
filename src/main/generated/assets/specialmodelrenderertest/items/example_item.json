@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "specialmodelrenderertest:item/example_item",
+    "model": {
+      "type": "specialmodelrenderertest:example_item"
+    }
+  }
+}
